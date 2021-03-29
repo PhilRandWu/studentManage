@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>XXX管理系统</title>
+  <link rel="stylesheet" type="text/css" href="../public/css/add.css">
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <!-- 新 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+  <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+  <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> 
+</head>
+<body>
+  <main class="container">
+    <h1 class="heading">学生档案</h1>
+    <form action="/add" method="post">
+      <div class="form-group">
+        <label for="name">姓名</label>
+        <input type="text" class="form-control" id="name" name="name">
+      </div> 
+      <div class="form-group">
+        <label for="age">年龄</label>
+        <input type="text" class="form-control" id="age" name="age">
+      </div>
+      <div class="form-group">
+        <label for="sex">性别</label>
+        <select class="form-control" name="sex">
+          <option type="redio" value="1" checked>男</option>
+          <option type="redio" value="0">女</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="email">邮箱</label>
+        <input type="email" class="form-control" id="email" name="email">
+      </div>
+      <div class="form-group form-control" >
+            <label for="hobbies">爱好：</label>
+            <input type="checkbox" value="Bike" name="hobbies">吃饭
+            <input type="checkbox" value="睡觉" name="hobbies">睡觉 
+            <input type="checkbox" value="打豆豆" name="hobbies">打豆豆 
+            <input type="checkbox" value="旅游" name="hobbies">旅游 
+            <input type="checkbox" value="马术" name="hobbies">马术 
+            <input type="checkbox" value="潜水" name="hobbies">潜水 
+            <input type="checkbox" value="足球" name="hobbies">足球 
+            <input type="checkbox" value="旅游" name="hobbies">旅游 
+            <input type="checkbox" value="跳绳" name="hobbies">跳绳 
+            <input type="checkbox" value="橄榄球" name="hobbies">橄榄球 
+      </div>
+      <div class="form-group">
+        <label for="college">学院</label>
+        <select class="form-control normal" name="collage">
+          <option value="物理学院">物理学院</option>
+          <option value="生命科学学院">生命科学学院</option>
+          <option value="数学学院">数学学院</option>
+          <option value="金融学院">金融学院</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="date">入学日期</label>
+        <input type="date" class="form-control" id="date" name="date">
+      </div>
+      <button class="btn btn-primary btn-block">提交</button>
+    </form>
+  </main>
+</body>
+</html>
